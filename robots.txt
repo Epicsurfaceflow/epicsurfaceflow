@@ -1,0 +1,7 @@
+# robots.txt for epicsurfaceflow.com
+# Allow all search engines to crawl the whole site
+User-agent: *
+Allow: /
+
+# Sitemap location (helps Google discover all pages)
+Sitemap: https://epicsurfaceflow.com/sitemap.xml

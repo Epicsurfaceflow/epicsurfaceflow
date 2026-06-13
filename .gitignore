@@ -1,0 +1,23 @@
+# Archivos de audio y assets pesados (NO subir al repositorio)
+Audio/
+Assets Canal/
+*.wav
+*.aiff
+*.zip
+*.mp3
+*.mid
+*.asd
+
+# Video
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Sistema
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Dependencias
+node_modules/

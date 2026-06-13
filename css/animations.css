@@ -66,7 +66,13 @@
     transform var(--transition);
 }
 
-.portfolio-card:hover {
+/* Once the scroll-reveal finishes, the card carries both .reveal and
+   .is-visible, so `.reveal.is-visible { transform: translateY(0) }` (0,2,0)
+   would override a plain `.portfolio-card:hover` (0,1,1). Match the
+   .is-visible state too so the hover selector reaches (0,3,0) and wins.
+   The faster .portfolio-card transform transition (var(--transition), 0.35s)
+   already beats the .reveal 0.7s rule by source order. */
+.portfolio-card.is-visible:hover {
   transform: translateY(-4px);
 }
 

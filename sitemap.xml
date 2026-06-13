@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://epicsurfaceflow.com/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://epicsurfaceflow.com/assets/images/sagrada_familia_2.jpeg</image:loc>
+      <image:title>Sagrada Família aerial cinematic view</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://epicsurfaceflow.com/assets/images/peter_s_basilcia.jpeg</image:loc>
+      <image:title>Vatican Build — St. Peter's Basilica construction timelapse</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://epicsurfaceflow.com/assets/images/duomo_milano.jpeg</image:loc>
+      <image:title>Duomo di Milano construction timelapse</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://epicsurfaceflow.com/assets/images/taj_mahal.jpeg</image:loc>
+      <image:title>Taj Mahal construction timelapse</image:title>
+    </image:image>
+  </url>
+</urlset>
