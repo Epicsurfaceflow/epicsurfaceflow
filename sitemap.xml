@@ -3,12 +3,12 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://epicsurfaceflow.com/</loc>
-    <lastmod>2026-06-13</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://epicsurfaceflow.com/assets/images/sagrada_familia_2.jpeg</image:loc>
-      <image:title>Sagrada Família aerial cinematic view</image:title>
+      <image:loc>https://epicsurfaceflow.com/assets/images/neuschwanstein_hero.jpg</image:loc>
+      <image:title>Neuschwanstein Castle aerial cinematic view</image:title>
     </image:image>
     <image:image>
       <image:loc>https://epicsurfaceflow.com/assets/images/peter_s_basilcia.jpeg</image:loc>

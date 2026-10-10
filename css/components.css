@@ -164,10 +164,11 @@
 /* ── Hero ── */
 
 .hero-headline {
-  font-size: clamp(2.9rem, 7.6vw, 6.25rem);
+  font-size: clamp(2.9rem, 6.6vw, 5.4rem);
   line-height: 0.92;
   margin: 1.25rem 0 1.5rem;
-  max-width: 980px;
+  max-width: 700px;
+  text-shadow: 0 2px 28px rgba(18,17,16,0.55);
 }
 
 .hero-lead {
@@ -1190,7 +1191,17 @@
   }
 
   .nav-cta {
-    padding: 0.6rem 0.9rem;
+    padding: 0.55rem 0.8rem;
+    font-size: 0.65rem;
+  }
+
+  .nav-brand img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav-brand-name {
+    font-size: 1.05rem;
   }
 }
 
