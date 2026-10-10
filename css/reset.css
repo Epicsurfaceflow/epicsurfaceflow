@@ -1,21 +1,21 @@
 :root {
-  --bg-deep:      #0a0a0c;
-  --bg-surface:   #131418;
-  --cream:        #f3ece0;
-  --cream-muted:  #d8cfbb;
-  --muted:        #8a8275;
-  --gold:         #c9a356;
-  --gold-light:   #e8d098;
-  --line:         #2a2a2e;
+  /* Palette: warm charcoal, travertine stone, Pompeian oxide red */
+  --bg-deep:      #121110;
+  --bg-surface:   #1b1a18;
+  --stone:        #e8e2d6;
+  --stone-muted:  #b9b2a5;
+  --muted:        #7d776c;
+  --accent:       #b8432f;
+  --accent-hi:    #cf5a43;
+  --accent-text:  #da6a4e;
+  --line:         #2b2926;
 
-  --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans:  -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mono:  ui-monospace, 'SF Mono', 'Fira Code', monospace;
+  --font-display: 'Archivo', 'Arial Narrow', sans-serif;
+  --font-sans:    'Archivo', -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:    'IBM Plex Mono', ui-monospace, monospace;
+  --display-stretch: 62%;
 
-  --shadow-card: 0 8px 40px rgba(0,0,0,0.6);
-  --shadow-gold: 0 0 40px rgba(201,163,86,0.2);
-  --radius-sm:  2px;
-  --radius-md:  4px;
+  --shadow-card: 0 18px 50px rgba(0,0,0,0.5);
 
   --ease-out: cubic-bezier(0.2, 0.9, 0.3, 1);
   --transition: 0.35s var(--ease-out);
@@ -34,7 +34,7 @@ html {
 
 body {
   background-color: var(--bg-deep);
-  color: var(--cream);
+  color: var(--stone);
   font-family: var(--font-sans);
   line-height: 1.7;
   overflow-x: hidden;
@@ -69,19 +69,35 @@ input, textarea {
 }
 
 em {
-  color: var(--gold);
-  font-style: italic;
+  font-style: normal;
+  color: var(--stone-muted);
 }
 
-h1, h2, h3, h4 {
-  font-family: var(--font-serif);
-  font-weight: 700;
-  line-height: 1.15;
-  color: var(--cream);
+h1 em, h2 em {
+  color: #9d968a;
+}
+
+h1, h2 {
+  font-family: var(--font-display);
+  font-stretch: var(--display-stretch);
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 0.95;
+  letter-spacing: -0.005em;
+  word-spacing: 0.06em;
+  color: var(--stone);
+}
+
+h3, h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--stone);
 }
 
 h2 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(2.6rem, 6.5vw, 5rem);
 }
 
 h3 {
@@ -89,7 +105,7 @@ h3 {
 }
 
 p {
-  color: var(--cream-muted);
+  color: var(--stone-muted);
   font-size: clamp(0.95rem, 1.5vw, 1.05rem);
 }
 
@@ -98,6 +114,17 @@ blockquote {
 }
 
 ::selection {
-  background: var(--gold);
-  color: var(--bg-deep);
+  background: var(--accent);
+  color: var(--stone);
+}
+
+/* Film grain: static noise layer for atmosphere */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }

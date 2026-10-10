@@ -29,7 +29,7 @@ section {
   justify-content: space-between;
   padding: 0 clamp(1.25rem, 4vw, 3rem);
   height: 72px;
-  background: rgba(10,10,12,0.8);
+  background: rgba(18,17,16,0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--line);
@@ -65,21 +65,24 @@ section {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10,10,12,0.65) 0%, rgba(10,10,12,0.88) 100%);
+  background:
+    linear-gradient(90deg, rgba(18,17,16,0.94) 0%, rgba(18,17,16,0.78) 45%, rgba(18,17,16,0.25) 100%),
+    linear-gradient(0deg, rgba(18,17,16,0.85) 0%, rgba(18,17,16,0) 40%);
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
-  padding-top: 72px;
-  max-width: 860px;
-  padding-bottom: 4rem;
+  padding-top: calc(72px + 2rem);
+  padding-bottom: 2rem;
 }
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5px;
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
 }
 
 .manifesto-grid {
@@ -92,7 +95,9 @@ section {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5px;
+  grid-auto-rows: clamp(300px, 34vw, 460px);
+  grid-auto-flow: dense;
+  gap: 4px;
 }
 
 #process {
@@ -115,7 +120,7 @@ section {
 .process-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10,10,12,0.8);
+  background: rgba(18,17,16,0.8);
 }
 
 .process-grid {
@@ -133,7 +138,6 @@ section {
 
 #numbers {
   overflow: hidden;
-  text-align: center;
 }
 
 .numbers-bg {
@@ -151,7 +155,7 @@ section {
 .numbers-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10,10,12,0.9);
+  background: rgba(18,17,16,0.9);
 }
 
 #numbers .container {
@@ -162,8 +166,8 @@ section {
 .numbers-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 3rem 0 2.5rem;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin: 1rem 0 3rem;
 }
 
 .tools-grid {
@@ -187,9 +191,11 @@ section {
   margin: 0 auto;
 }
 
-.faq-list {
-  max-width: 760px;
-  margin: 0 auto;
+#faq .container {
+  display: grid;
+  grid-template-columns: 1fr 1.7fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
 }
 
 #contact {
@@ -212,19 +218,19 @@ section {
 .cta-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10,10,12,0.85);
+  background: rgba(18,17,16,0.85);
 }
 
 .cta-content {
   position: relative;
   z-index: 1;
-  max-width: 620px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
 #footer {
   border-top: 1px solid var(--line);
-  background: rgba(10,10,12,0.95);
+  background: rgba(18,17,16,0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   padding: clamp(3rem, 6vw, 5rem) 0 0;
@@ -258,6 +264,11 @@ section {
 
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: clamp(260px, 60vw, 420px);
+  }
+
+  #faq .container {
+    grid-template-columns: 1fr;
   }
 
   .process-grid {
@@ -298,13 +309,11 @@ section {
 @media (max-width: 500px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
+    grid-auto-rows: auto;
   }
 
   .footer-grid {
     grid-template-columns: 1fr;
   }
 
-  .hero-stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }

@@ -3,6 +3,11 @@
   50%       { transform: translateY(8px); opacity: 0.5; }
 }
 
+@keyframes rec-blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.2; }
+}
+
 @keyframes shake {
   0%, 100% { transform: translateX(0); }
   20%       { transform: translateX(-6px); }
@@ -61,9 +66,7 @@
 .scroll-hint.reveal         { transition-delay: 0.6s; }
 
 .portfolio-card {
-  transition:
-    box-shadow var(--transition),
-    transform var(--transition);
+  transition: transform var(--transition);
 }
 
 /* Once the scroll-reveal finishes, the card carries both .reveal and
@@ -81,7 +84,7 @@
 }
 
 .number-item:hover .big-number {
-  color: var(--gold);
+  color: var(--accent-text);
   transition: color var(--transition);
 }
 
@@ -96,7 +99,7 @@
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--gold);
+  background: var(--accent);
   transition: width 0.3s ease;
 }
 
@@ -104,22 +107,8 @@
   width: 100%;
 }
 
-.btn {
-  position: relative;
-  overflow: hidden;
-}
-
-.btn::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.04);
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.btn:active::after {
-  opacity: 1;
+.btn:active {
+  transform: translateY(1px);
 }
 
 #nav {
@@ -136,6 +125,13 @@
   transition: background var(--transition), color var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
-.portfolio-card img {
-  will-change: transform, filter;
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }

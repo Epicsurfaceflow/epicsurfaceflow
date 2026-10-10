@@ -146,48 +146,4 @@
     }
   });
 
-  /* ── Castle 3D parallax ── */
-  var castleImg = document.getElementById('castle-img');
-
-  if (castleImg) {
-    var castleScrollY  = 0;
-    var castleMouseX   = 0;
-    var castleMouseY   = 0;
-    var tMouseX        = 0;
-    var tMouseY        = 0;
-    var castleRafId    = null;
-
-    function maxScrollCastle() {
-      return Math.max(1, document.body.scrollHeight - window.innerHeight);
-    }
-
-    function lerpC(a, b, t) { return a + (b - a) * t; }
-
-    function updateCastle() {
-      var t        = castleScrollY / maxScrollCastle();
-      castleMouseX = lerpC(castleMouseX, tMouseX, 0.06);
-      castleMouseY = lerpC(castleMouseY, tMouseY, 0.06);
-
-      var rotY   = (t - 0.5) * 48 + castleMouseX * 12;
-      var rotX   = castleMouseY * -7;
-      var scale  = 1 + t * 0.18;
-
-      castleImg.style.transform =
-        'rotateY(' + rotY + 'deg) rotateX(' + rotX + 'deg) scale(' + scale + ')';
-
-      castleRafId = requestAnimationFrame(updateCastle);
-    }
-
-    window.addEventListener('scroll', function () {
-      castleScrollY = window.scrollY;
-    }, { passive: true });
-
-    window.addEventListener('mousemove', function (e) {
-      tMouseX = (e.clientX / window.innerWidth  - 0.5) * 2;
-      tMouseY = (e.clientY / window.innerHeight - 0.5) * 2;
-    });
-
-    updateCastle();
-  }
-
 })();
