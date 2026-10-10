@@ -28,10 +28,9 @@
 }
 
 .nav-links a {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 500;
   color: var(--stone-muted);
   transition: color var(--transition);
 }
@@ -59,11 +58,13 @@
   justify-content: center;
   gap: 0.6rem;
   padding: 0.85rem 1.5rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   border-radius: 0;
   transition: background var(--transition), color var(--transition), border-color var(--transition);
   white-space: nowrap;
@@ -118,10 +119,12 @@
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--stone-muted);
 }
 
@@ -137,10 +140,12 @@
   display: flex;
   align-items: center;
   gap: 0.9rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--stone-muted);
   margin-bottom: 1.25rem;
 }
@@ -209,10 +214,12 @@
 }
 
 .hero-meta {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--muted);
   margin-bottom: 3rem;
 }
@@ -242,10 +249,12 @@
 }
 
 .stat-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--muted);
 }
 
@@ -254,10 +263,12 @@
   right: clamp(1.25rem, 4vw, 3rem);
   bottom: 2rem;
   z-index: 1;
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--stone-muted);
   text-align: right;
   line-height: 1.7;
@@ -269,7 +280,9 @@
 }
 
 .scroll-arrow {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 1rem;
   color: var(--stone-muted);
   animation: bounce-arrow 2s ease-in-out infinite;
@@ -332,10 +345,12 @@
 }
 
 .service-price {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--muted);
 }
 
@@ -448,10 +463,12 @@
 }
 
 .creator-title {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--muted);
   padding-top: 0.6rem;
   border-top: 1px solid var(--line);
@@ -500,10 +517,12 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.66rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--stone);
   text-shadow: 0 1px 8px rgba(0,0,0,0.6);
 }
@@ -546,10 +565,12 @@
 }
 
 .card-era {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.66rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--stone-muted);
 }
 
@@ -572,10 +593,12 @@
 }
 
 .portfolio-summary a {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--stone);
   border-bottom: 1px solid var(--accent);
   align-self: flex-start;
@@ -604,9 +627,11 @@
 }
 
 .step-number {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.78rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--accent-text);
   flex-shrink: 0;
   padding-top: 0.25rem;
@@ -638,10 +663,12 @@
 }
 
 .number-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--stone-muted);
 }
 
@@ -717,11 +744,13 @@
   right: -1px;
   background: var(--accent);
   color: var(--stone);
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.66rem;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   padding: 0.4rem 0.8rem;
 }
 
@@ -744,19 +773,23 @@
 }
 
 .plan-subtitle {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--stone-muted);
   margin-bottom: 0.75rem;
 }
 
 .plan-price {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--muted);
 }
 
@@ -837,7 +870,9 @@
 }
 
 .faq-icon {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 1.2rem;
   color: var(--accent-text);
   flex-shrink: 0;
@@ -874,10 +909,12 @@
 }
 
 .cta-subtitle {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--stone-muted);
   margin-bottom: 2.5rem;
 }
@@ -919,10 +956,12 @@
 }
 
 .cta-contact-row {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--muted);
   line-height: 2;
 }
@@ -937,10 +976,12 @@
 }
 
 .footer-brand-col .footer-location {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
 }
 
 .footer-brand-row {
@@ -960,10 +1001,12 @@
 }
 
 .footer-col h5 {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--muted);
   margin-bottom: 1rem;
   font-weight: 400;
@@ -986,10 +1029,12 @@
 }
 
 .footer-bottom span {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--muted);
 }
 
@@ -1040,10 +1085,12 @@
 }
 
 .lightbox-tag {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--accent-text);
   display: block;
   margin-bottom: 0.75rem;
@@ -1066,10 +1113,12 @@
 }
 
 .lightbox-era {
-  font-family: var(--font-mono);
+  font-family: var(--font-label);
+  font-stretch: var(--label-stretch);
+  font-variant-numeric: tabular-nums;
   font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.03em;
   color: var(--muted);
 }
 

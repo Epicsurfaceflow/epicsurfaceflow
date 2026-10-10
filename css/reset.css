@@ -12,7 +12,8 @@
 
   --font-display: 'Archivo', 'Arial Narrow', sans-serif;
   --font-sans:    'Archivo', -apple-system, 'Segoe UI', sans-serif;
-  --font-mono:    'IBM Plex Mono', ui-monospace, monospace;
+  --font-label:   'Archivo', -apple-system, 'Segoe UI', sans-serif;
+  --label-stretch: 125%;
   --display-stretch: 62%;
 
   --shadow-card: 0 18px 50px rgba(0,0,0,0.5);
